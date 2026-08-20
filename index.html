@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chaitanya Siri | AI-Powered Data Analyst Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#1f2937;
+    line-height:1.6;
+}
+
+header{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:12px;
+}
+
+header p{
+    font-size:20px;
+    color:#d1d5db;
+}
+
+.hero-description{
+    max-width:700px;
+    margin:18px auto 0;
+    font-size:17px;
+    color:#9ca3af;
+}
+
+nav{
+    background:white;
+    padding:16px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+    color:#111827;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.about{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+.about p{
+    margin-bottom:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+}
+
+.skill{
+    background:white;
+    padding:14px 20px;
+    border-radius:10px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+    font-weight:bold;
+    transition:transform 0.2s;
+}
+
+.skill:hover{
+    transform:translateY(-3px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:white;
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:transform 0.2s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+.project h3{
+    font-size:21px;
+    margin-bottom:12px;
+}
+
+.project p{
+    margin-bottom:18px;
+    color:#4b5563;
+}
+
+.project-tools{
+    margin-bottom:20px;
+}
+
+.project-tools span{
+    display:inline-block;
+    background:#eef2ff;
+    color:#1e40af;
+    padding:5px 9px;
+    margin:3px;
+    border-radius:5px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.button{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#1d4ed8;
+}
+
+.certifications{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.certificate{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:transform 0.2s;
+}
+
+.certificate:hover{
+    transform:translateY(-5px);
+}
+
+.certificate h3{
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.certificate p{
+    color:#4b5563;
+    margin-bottom:15px;
+}
+
+.certificate-type{
+    font-size:14px;
+    font-weight:bold;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+    font-size:18px;
+}
+
+.contact a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:600px){
+
+    header{
+        padding:70px 20px;
+    }
+
+    header h1{
+        font-size:34px;
+    }
+
+    header p{
+        font-size:17px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:6px;
+    }
+
+    section{
+        padding:55px 18px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Chaitanya Siri</h1>
+
+    <p>
+        AI-Powered Data Analyst | SQL | Python | Excel | Power BI | Tableau
+    </p>
+
+    <p class="hero-description">
+        Turning data into actionable business insights through analytics,
+        visualization, and AI-assisted decision making.
+    </p>
+
+</header>
+
+<nav>
+
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certification">Certifications</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about">
+
+        <p>
+            I am a BSc Computer Science graduate focused on Data Analytics
+            and AI-powered business insights. I have hands-on experience
+            working with Excel, SQL, Python, Power BI, Tableau, and AI tools
+            to clean, analyze, visualize, and interpret data.
+        </p>
+
+        <p>
+            I have completed end-to-end analytics projects across sales,
+            HR, e-commerce, customer churn, and AI-powered business analytics.
+            These projects strengthened my ability to transform raw data into
+            meaningful KPIs, interactive dashboards, actionable insights,
+            and data-driven business recommendations.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">Excel</div>
+        <div class="skill">Pivot Tables</div>
+        <div class="skill">VLOOKUP</div>
+        <div class="skill">INDEX-MATCH</div>
+        <div class="skill">Power Query</div>
+
+        <div class="skill">SQL</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">JOINs</div>
+        <div class="skill">CTEs</div>
+        <div class="skill">Window Functions</div>
+
+        <div class="skill">Python</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Matplotlib</div>
+
+        <div class="skill">Power BI</div>
+        <div class="skill">DAX</div>
+        <div class="skill">Data Modeling</div>
+        <div class="skill">KPI Development</div>
+
+        <div class="skill">Tableau</div>
+        <div class="skill">Data Visualization</div>
+
+        <div class="skill">Statistics</div>
+        <div class="skill">EDA</div>
+        <div class="skill">Data Cleaning</div>
+        <div class="skill">Data Validation</div>
+        <div class="skill">Business Analysis</div>
+        <div class="skill">Data Storytelling</div>
+
+        <div class="skill">Generative AI</div>
+        <div class="skill">Prompt Engineering</div>
+        <div class="skill">AI-Assisted Analysis</div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+
+            <h3>AI-Powered Data Analytics</h3>
+
+            <p>
+                An end-to-end analytics project analyzing business
+                performance using KPIs, profitability, quantity,
+                orders, and AI-assisted recommendations.
+            </p>
+
+            <div class="project-tools">
+
+                <span>Excel</span>
+                <span>SQL</span>
+                <span>Python</span>
+                <span>Power BI</span>
+                <span>AI</span>
+
+            </div>
+
+            <a class="button"
+               href="https://github.com/chaitanyasiri/ai-powered-data-analytics"
+               target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+        <div class="project">
+
+            <h3>Sales & Revenue Analytics</h3>
+
+            <p>
+                Analyzed 10,000+ sales records to evaluate revenue,
+                profitability, orders, quantity, regional performance,
+                and business trends through an interactive dashboard.
+            </p>
+
+            <div class="project-tools">
+
+                <span>Excel</span>
+                <span>Power Query</span>
+                <span>Power BI</span>
+                <span>DAX</span>
+
+            </div>
+
+            <a class="button"
+               href="https://github.com/chaitanyasiri/Sales-Revenue-Analytics"
+               target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+        <div class="project">
+
+            <h3>HR Analytics Dashboard</h3>
+
+            <p>
+                Analyzed workforce data to understand employee
+                demographics, satisfaction, work-life balance,
+                performance, and attrition patterns.
+            </p>
+
+            <div class="project-tools">
+
+                <span>Excel</span>
+                <span>Power Query</span>
+                <span>Power BI</span>
+                <span>DAX</span>
+
+            </div>
+
+            <a class="button"
+               href="https://github.com/chaitanyasiri/HR-Analytics-Dashboard"
+               target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+        <div class="project">
+
+            <h3>E-commerce Customer Analytics</h3>
+
+            <p>
+                Analyzed customer and order data to understand
+                purchasing behavior, order performance, customer
+                trends, and key e-commerce metrics.
+            </p>
+
+            <div class="project-tools">
+
+                <span>Excel</span>
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Python</span>
+
+            </div>
+
+            <a class="button"
+               href="https://github.com/chaitanyasiri/Ecommerce-Customer-Analytics"
+               target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+        <div class="project">
+
+            <h3>Customer Churn Analysis</h3>
+
+            <p>
+                Analyzed 10,000 customer records to identify churn
+                patterns using tenure, satisfaction, monthly charges,
+                and customer behavior indicators.
+            </p>
+
+            <div class="project-tools">
+
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Statistics</span>
+
+            </div>
+
+            <a class="button"
+               href="https://github.com/chaitanyasiri/Customer-Churn-Analysis"
+               target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="certification">
+
+    <h2>Certifications & Virtual Experience</h2>
+
+    <div class="certifications">
+
+        <div class="certificate">
+
+            <h3>OneRoadMap</h3>
+
+            <div class="certificate-type">
+                Certificate of Completion
+            </div>
+
+            <p>
+                Completed professional learning and assessment
+                with a score of 85%.
+            </p>
+
+        </div>
+
+        <div class="certificate">
+
+            <h3>Deloitte</h3>
+
+            <div class="certificate-type">
+                Data Analytics Job Simulation | Forage
+            </div>
+
+            <p>
+                Completed a practical data analytics job simulation
+                involving data analysis, visualization, and
+                business-focused insights.
+            </p>
+
+            <a class="button"
+               href="Deloitte Certificate.pdf"
+               target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+        <div class="certificate">
+
+            <h3>Tata Group</h3>
+
+            <div class="certificate-type">
+                GenAI Powered Data Analytics | Forage
+            </div>
+
+            <p>
+                Completed a practical GenAI-powered analytics
+                simulation involving data analysis, AI-assisted
+                insights, and business decision-making.
+            </p>
+
+            <a class="button"
+               href="GenAI TATA Certificate.pdf"
+               target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact">
+
+        <p>
+            Interested in Data Analytics, Business Intelligence,
+            and AI-powered analytics opportunities.
+        </p>
+
+        <br>
+
+        <p>
+            <a href="https://github.com/chaitanyasiri"
+               target="_blank">
+                GitHub
+            </a>
+        </p>
+
+        <br>
+
+        <p>
+            <a href="https://www.linkedin.com/in/naga-sai-chaitanya-siri"
+               target="_blank">
+                LinkedIn
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Chaitanya Siri | AI-Powered Data Analyst Portfolio
+    </p>
+
+</footer>
+
+</body>
+  </html>
